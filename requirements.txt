@@ -1,0 +1,11 @@
+# SmartCare OR - Project Requirements
+# Core Operations Research & Simulation Stack
+streamlit>=1.30.0
+numpy>=1.24.0
+scipy>=1.10.0
+pandas>=2.0.0
+plotly>=5.18.0
+pulp>=2.8.0,<3.0.0
+simpy>=4.1.0
+pytest>=8.0.0
+pydantic>=2.5.0
