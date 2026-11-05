@@ -1,10 +1,3 @@
-"""
-Data schemas and type definitions for SmartCare OR.
-All time units are explicitly documented.
-Internally, arrival and service rates are in patients/hour.
-Waiting times are calculated in hours and converted to minutes for reporting.
-"""
-
 from dataclasses import dataclass, field
 from typing import List, Dict, Optional, Any
 import numpy as np

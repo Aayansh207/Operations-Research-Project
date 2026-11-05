@@ -1,9 +1,3 @@
-"""
-Synthetic Patient Arrival Generator and CSV Data Handler.
-All generated data is synthetic and clearly labeled as illustrative.
-Supports exporting and importing patient arrival traces with strict validation.
-"""
-
 from typing import List, Dict, Tuple, Optional
 import io
 import pandas as pd

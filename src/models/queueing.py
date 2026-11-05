@@ -1,20 +1,3 @@
-"""
-Technique 1: Queueing Theory (M/M/c Analytical Model).
-
-Assumptions of M/M/c:
-1. Patient arrivals follow a stationary Poisson process with rate lambda.
-2. Service times follow an exponential distribution with mean 1/mu per doctor.
-3. c identical, parallel doctors (servers).
-4. First-Come, First-Served (FCFS) queue discipline.
-5. Infinite queue capacity and infinite calling population.
-6. Stable steady-state operation requires rho = lambda / (c * mu) < 1.
-7. No patient abandonment or reneging in this basic analytical formulation.
-
-Note: In hospitals, actual arrival patterns may deviate from pure Poisson processes,
-and service times can be log-normal or Erlang distributed. We evaluate these
-extensions using discrete-event simulation in Technique 3.
-"""
-
 from typing import Dict, Any, List
 import pandas as pd
 import numpy as np
@@ -80,7 +63,7 @@ def calculate_mmc(
     rho = lam / (c * mu)  # Server utilization
 
     # Stability check: rho must be strictly less than 1
-    if rho >= 1.0:
+    if rho >= 1.0: 
         return QueueingResult(
             arrival_rate=lam,
             service_rate=mu,
